@@ -57,7 +57,7 @@ bbox_nl <- spTransform(bbox, CRS("+proj=sterea +lat_0=52.15616055555555 +lon_0=5
 
 raster::shapefile(bbox_nl,paste0(outdir,"\\bbox_nl"),overwrite=TRUE)
 
-## create a shapefile from GEDI (just for visualization check)
+## create a shapefile from GEDI 
 to_shp_gedi<-function(level1b_clip_bb){
   level1bGeo_nl<-getLevel1BGeo(level1b=level1b_clip_bb,select=c("elevation_bin0"))
   level1bGeo_nl$shot_number<-paste0(level1bGeo_nl$shot_number)
@@ -73,3 +73,4 @@ proj4string(level1bGeo_nl_spdf) <- CRS("+proj=longlat +datum=WGS84 +no_defs +ell
 level1bGeo_nl_spdf_nl <- spTransform(level1bGeo_nl_spdf, CRS("+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +units=m +no_defs"))
 
 raster::shapefile(level1bGeo_nl_spdf_nl,paste0(outdir,"\\level1b_clip_nl_shp"),overwrite=TRUE)
+raster::shapefile(level1bGeo_nl_spdf,paste0(outdir,"\\level1b_clip_nl_shp_wgs"),overwrite=TRUE)
