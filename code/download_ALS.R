@@ -20,11 +20,12 @@ library(rgeos)
 outdir=opt$path
 setwd(outdir)
 
-# read GEDI pulse point shp and make buffer around it
+# read GEDI pulse point shp 
 #level1bGeo_nl_spdf=readOGR(dsn="level1b_clip_nl_shp.shp")
 level1bGeo_nl_spdf=readOGR(dsn=opt$shapefile)
 
-# extract ALS of area of interest
+# get ALS data for GEDI footprint (diameter=25m) 
+#(here we assume that the pulse location is correct (but it has min. +-8 m error horizontal positioning))
 # this part is computationally ineffective - for loop over pulse points
 
 ctg = catalog(outdir)
