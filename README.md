@@ -3,7 +3,7 @@ This scripts are downloading GEDI and ALS data related to the Vijlenerbos area i
 
 ## **R packages**
 
-I used version R 3.5.1.. The required packages to install are the following:
+I used version R 3.5.1.. The required packages for installation are the following:
 
 ```{r}
 install.packages(c("lidR", "rGEDI", "optparse", "rgdal","sp"))
