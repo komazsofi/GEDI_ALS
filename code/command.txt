@@ -1,0 +1,2 @@
+Rscript same_height.R -d D:/Sync/_Amsterdam/NextJob/LiDARPos_BangorU/interview/data/ -p 24250500400127557
+Rscript same_height.R -d D:/Sync/_Amsterdam/NextJob/LiDARPos_BangorU/interview/data/ -p 24250500600127558
