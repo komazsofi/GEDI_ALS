@@ -13,7 +13,6 @@ opt = parse_args(opt_parser);
 
 library(lidR)
 library(rgdal)
-library(rgeos)
 
 # Set output dir for downloading the files
 #outdir="D:/Sync/_Amsterdam/NextJob/LiDARPos_BangorU/interview/data/"
