@@ -11,14 +11,14 @@ install.packages(c("lidR", "rGEDI", "optparse", "rgdal","sp"))
 
 ## **Instructions for executing the scripts**
 
-The R scripts are written that it is posisble to run from command line. The required data for small demo can be downloaded from the following [link](https://drive.google.com/drive/folders/1Hg3Ig3FvjxNiMC-TNPxDCcBEVOIqvlkz?usp=sharing)
+The R scripts are written that it is possible to run from command line. The required data for small demo can be downloaded from the following [link](https://drive.google.com/drive/folders/1Hg3Ig3FvjxNiMC-TNPxDCcBEVOIqvlkz?usp=sharing)
 
-From command line:
+From command line (the D./Sync/data/ path needs to be changed according where the data was downloaded):
 
 ```
-Rscript download_gedi.R D:/Sync/data
-Rscript download_ALS.R -p D:/Sync/data -s level1b_clip_nl_shp.shp
-Rscript same_height.R -d D:/Sync/data -p 2425050040012755
+Rscript download_gedi.R D:/Sync/data/
+Rscript download_ALS.R -p D:/Sync/data/ -s level1b_clip_nl_shp.shp
+Rscript same_height.R -d D:/Sync/data/ -p 2425050040012755
 ```
 
 With the command.txt it is possible to use GNU parallel package to parallel process several pulses related data parallel. 
