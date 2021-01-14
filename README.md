@@ -9,7 +9,7 @@ Silva, C. A. et al. (2018) ‘Comparison of Small-and Large-Footprint Lidar Char
 
 ## **Workflow**
 
-The developed workflow has three main step: 
+The developed workflow has three main steps: 
 
 a.)	download the GEDI data based on selected coordinates (upper left and lower right) and spatially cut for the selected area of interest. Generate a shape file which stores the position of the GEDI pulses and convert into the local Dutch coordinate system (RD_New). (download_gedi.R)
 
