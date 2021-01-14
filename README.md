@@ -7,6 +7,14 @@ Hancock, S. et al. (2019) ‘The GEDI Simulator: A Large‐Footprint Waveform Li
 
 Silva, C. A. et al. (2018) ‘Comparison of Small-and Large-Footprint Lidar Characterization of Tropical Forest Aboveground Structure and Biomass: A Case Study from Central Gabon’, IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing. Institute of Electrical and Electronics Engineers, 11(10), pp. 3512–3526. doi: 10.1109/JSTARS.2018.2816962.
 
+## **Workflow**
+
+The developed workflow has three main step: 
+  a.)	download the GEDI data based on selected coordinates (upper left and lower right) and spatially cut for the selected area of interest. Generate a shape file which stores the position of the GEDI pulses and convert into the local Dutch coordinate system (RD_New). (download_gedi.R)
+  b.)	Extract the ALS data point cloud data related to the pulse positions using a 12.5 radius (25 m diameter) around the pulse position. (download_ALS.R)
+  c.)	According to pulse position simulate the GEDI waveform from the corresponding ALS dataset and then compare to the actual GEDI dataset for the same location. (same_height.R)
+
+
 ## **R packages**
 
 I used version R 3.5.1.. The required packages are the following:
