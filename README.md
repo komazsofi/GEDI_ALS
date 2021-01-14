@@ -9,7 +9,7 @@ Silva, C. A. et al. (2018) ‘Comparison of Small-and Large-Footprint Lidar Char
 
 ## **R packages**
 
-I used version R 3.5.1.. The required packages for installation are the following:
+I used version R 3.5.1.. The required packages are the following:
 
 ```{r}
 install.packages(c("lidR", "rGEDI", "optparse", "rgdal","sp"))
