@@ -1,3 +1,8 @@
+# The script aim is to extract the ALS data related to the pulse positions from the GEDI data.
+#
+# Usage from command line:
+#Rscript download_ALS.R -p [path] -s [shp file]
+
 # Argumentations
 library(optparse)
 

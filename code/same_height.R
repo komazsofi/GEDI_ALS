@@ -1,3 +1,8 @@
+# The script aim is to simulate ALS data as waveform and compare the RH100 values from both dataset
+#
+# Usage from command line:
+#Rscript same_height.R -d [path] -p 2425050040012755
+
 # Argumentations
 library(optparse)
 

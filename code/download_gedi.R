@@ -1,3 +1,8 @@
+# The script aim is to download and clip the GEDI data for a selected region and time range.
+#
+# Usage from command line:
+#Rscript download_gedi.R -p [path]
+
 # Argumentations
 library(optparse)
 
