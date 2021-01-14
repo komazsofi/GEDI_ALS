@@ -10,9 +10,12 @@ Silva, C. A. et al. (2018) ‘Comparison of Small-and Large-Footprint Lidar Char
 ## **Workflow**
 
 The developed workflow has three main step: 
-  *a.)	download the GEDI data based on selected coordinates (upper left and lower right) and spatially cut for the selected area of interest. Generate a shape file which stores the position of the GEDI pulses and convert into the local Dutch coordinate system (RD_New). (download_gedi.R)
-  *b.)	Extract the ALS data point cloud data related to the pulse positions using a 12.5 radius (25 m diameter) around the pulse position. (download_ALS.R)
-  *c.)	According to pulse position simulate the GEDI waveform from the corresponding ALS dataset and then compare to the actual GEDI dataset for the same location. (same_height.R)
+
+a.)	download the GEDI data based on selected coordinates (upper left and lower right) and spatially cut for the selected area of interest. Generate a shape file which stores the position of the GEDI pulses and convert into the local Dutch coordinate system (RD_New). (download_gedi.R)
+
+b.)	Extract the ALS data point cloud data related to the pulse positions using a 12.5 radius (25 m diameter) around the pulse position. (download_ALS.R)
+
+c.)	According to pulse position simulate the GEDI waveform from the corresponding ALS dataset and then compare to the actual GEDI dataset for the same location. (same_height.R)
 
 
 ## **R packages**
